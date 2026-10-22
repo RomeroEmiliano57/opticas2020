@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Dos Mil 2020 Veinte | Chihuahua</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">ÓPTICA <span>DOS MIL</span></div>
+        <a href="#contacto" class="btn-primary-sm">Agendar Cita</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge-tech">SALUD VISUAL DE ALTA PRECISIÓN</span>
+            <h1>CUIDAMOS TU VISIÓN CON TECNOLOGÍA</h1>
+            <p class="subtitle">Examen de la vista computarizado, armazones de tendencia, micas graduadas y lentes de contacto en Chihuahua 2000.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-tech">Agendar Examen por WhatsApp</a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="quick-info">
+        <div class="info-card">
+            <h4>UBICACIÓN</h4>
+            <p>Chihuahua 2000 I Etapa, 31136 Chihuahua, Chih.</p>
+        </div>
+        <div class="info-card">
+            <h4>HORARIO CONTINUO</h4>
+            <p>Lunes a Domingo<br>10:30 a.m. – 6:30 p.m.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <h2 class="section-title">NUESTROS SERVICIOS Y PRODUCTOS</h2>
+        <div class="divider"></div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-body">
+                    <h3>Examen Computarizado</h3>
+                    <p>Evaluación visual digital exacta para detectar graduaciones de miopía, astigmatismo e hipermetropía.</p>
+                    <button class="btn-select" onclick="seleccionarServicio('Examen de la Vista Computarizado')">Agendar Examen</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-body">
+                    <h3>Armazones y Oftálmicos</h3>
+                    <p>Amplia variedad en estilos metálicos, acetato y diseños ligeros para damas, caballeros y niños.</p>
+                    <button class="btn-select" onclick="seleccionarServicio('Armazones Oftálmicos')">Consultar Catálogo</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-body">
+                    <h3>Lentes de Contacto</h3>
+                    <p>Soluciones graduadas y cosméticas con materiales de alta oxigenación para mayor confort diario.</p>
+                    <button class="btn-select" onclick="seleccionarServicio('Lentes de Contacto')">Cotizar Lentes</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-body">
+                    <h3>Tratamientos Especiales</h3>
+                    <p>Filtro antirreflejante Blue Free para pantallas, fotocromáticos (Transitions) y micas progresivas.</p>
+                    <button class="btn-select" onclick="seleccionarServicio('Tratamientos Antirreflejante/Micas')">Consultar Micas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-box">
+            <h2>AGENDAR MI EVALUACIÓN VISUAL</h2>
+            <p>Selecciona el servicio de tu interés y envía tu consulta directa para coordinar tu horario.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre del paciente:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio requerido:</label>
+                    <select id="servicio" required>
+                        <option value="Examen de la Vista Computarizado">Examen de la Vista Computarizado</option>
+                        <option value="Armazones Oftálmicos">Armazones Oftálmicos</option>
+                        <option value="Lentes de Contacto">Lentes de Contacto</option>
+                        <option value="Tratamientos Antirreflejante/Micas">Tratamientos Antirreflejante / Blue Free</option>
+                        <option value="Ajuste o Reparación">Ajuste o Mantenimiento de Armazón</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Día o consulta específica:</label>
+                    <input type="text" id="mensaje" placeholder="Ej. Cotización de graduación, horario de preferencia, etc." required>
+                </div>
+
+                <button type="submit" class="btn-tech-block">Confirmar por WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Óptica Dos Mil 2020 Veinte. Todos los derechos reservados.</p>
+        <p class="credit">Desarrollado por <a href="#">Emiliano Romero</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
